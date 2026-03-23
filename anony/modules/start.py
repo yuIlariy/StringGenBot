@@ -7,7 +7,7 @@ from anony import app, buttons, db
 async def f_start(_, m: types.Message):
     await m.reply_photo(
         photo="https://telegra.ph/file/d84e1a26bf8596bbad10a.jpg",
-        caption=f"Hey {m.from_user.first_name} 👋,\n\nThis is {app.mention} 🤖,\nAn open source session generator bot ⚡.\n\n🛸 powered by [NAm](https://t.me/xspes)",
+        caption=f"Hey {m.from_user.first_name} 👋,\n\nThis is {app.mention} 🤖,\nAn open source session generator bot ⚡.\n\n🛸 powered by <a href='https://t.me/xspes'>NAm</a>",
         reply_markup=buttons.start_key(),
     )
     await db.add_user(m.from_user.id)
