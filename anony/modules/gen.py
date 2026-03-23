@@ -95,7 +95,7 @@ async def _gen_session(_, cq: types.CallbackQuery):
          return await cq.message.reply_text(f"Error : <code>{str(ex)}</code>")
 
     try:
-        txt = "🗿Here is your {0} session\n\n<code>{1}</code>\n\n⚡A session generator bot By <a href={2}>Bees🐝</a>\n\n☠ <b>Note :</b> Don't share the session with anyone."
+        txt = "🗿Here is your {0} session\n\n<code>{1}</code>\n\n⚡A Session Generator Bot By <a href={2}>Bees🐝</a>\n\n☠ <b>Note :</b> Don't share the session with anyone."
         if pyrogram:
             string_session = await client.export_session_string()
             await client.send_message(
@@ -123,6 +123,6 @@ async def _gen_session(_, cq: types.CallbackQuery):
         pass
     try:
         await client.disconnect()
-        await cq.message.reply_text(f"⚡Successfully generated your {sgen} string session.\n\n🗿Please check your saved messages for getting it.\n\n🎲A string generator bot By <a href={SUPPORT_CHAT}>Bees🐝</a>.", reply_markup=buttons.pm_key(cq.from_user.id))
+        await cq.message.reply_text(f"⚡Successfully Generated Your {sgen} String Session.\n\n🗿Please check your saved messages for getting it.\n\n🎲A string Generator By <a href={SUPPORT_CHAT}>Bees🐝</a>.", reply_markup=buttons.pm_key(cq.from_user.id))
     except:
         pass
