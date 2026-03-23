@@ -43,5 +43,6 @@ class Inline:
                     self.ikb(text="Support", url=SUPPORT_CHAT),
                     self.ikb(text="Source", url="https://github.com/AnonymousX1025/StringGenBot"),
                 ],
+                [self.ikb(text="Updates", url="https://t.me/OtherBs")],
             ]
         )
